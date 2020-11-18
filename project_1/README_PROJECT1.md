@@ -1,0 +1,1 @@
+The gif is what coded using p5. Since I'm on windows I had to use a third part software, clideo, to crop my screen recording. If there's a better option please let me know :)
