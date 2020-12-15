@@ -1,14 +1,15 @@
 function setup() {
     createCanvas(1000, 1000);
+    background('#efefef');
   }
   
   function draw() {
     if (mouseIsPressed) {
-      fill(255);
-      const R = min(100, max(50, mouseY / 5));
-      console.log(R);
-      const M = max(2, mouseX / 100);
-      polygon(mouseX, mouseY, R, M);
+      const x = mouseX;
+      const y = mouseY;
+      const radius = 70;
+      const npoints = max(2.1, y / 70);
+      polygon(x, y, radius, npoints);
     }
   }
   
@@ -19,7 +20,7 @@ function setup() {
       let sx = x + cos(a) * radius;
       let sy = y + sin(a) * radius;
       vertex(sx, sy);
-      noFill();
+      fill(255, 255, 255, 50);
     }
     endShape(CLOSE);
   }
