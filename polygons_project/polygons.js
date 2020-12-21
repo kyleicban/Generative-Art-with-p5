@@ -1,14 +1,14 @@
 function setup() {
     createCanvas(1000, 1000);
-    background('#efefef');
   }
   
   function draw() {
+    background(255, 255, 255, 45);
     if (mouseIsPressed) {
-      const x = mouseX;
-      const y = mouseY;
-      const radius = 70;
-      const npoints = max(2.1, y / 70);
+      let x = mouseX;
+      let y = mouseY;
+      let radius = 70;
+      let npoints =  y / 70;
       polygon(x, y, radius, npoints);
     }
   }
