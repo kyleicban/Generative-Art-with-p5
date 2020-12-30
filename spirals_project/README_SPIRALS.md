@@ -1,1 +1,0 @@
-I found a cool python library while interviewing so I decided to get some practice in! This is code belongs to Juni Learning as part of the recruitment process. I used repl.it to run the program.
