@@ -20,7 +20,7 @@ function draw() {
   translate(width/2, height/2);
   
   for (let i = 0; i < n; i++) {
-    let a = i * angle;
+    let a = i * angle - (Math.PI / 2);
     const xCoord = getX(r, a)
     const yCoord = getY(r, a);
     
