@@ -1,10 +1,16 @@
 function setup() {
   createCanvas(550, 550);
+  slider = createSlider(0, 50, 23, 1);
+  slider.position(10, 560);
+  slider.style('width', '530px');
 }
 
 function draw() {
   background(0);
-  const n = 23;
+  const n = slider.value();
+  textSize(32);
+  fill(255);
+  text('n = ' + n, 10, 40);
   const angle = calcAngle(n)
   const r = 265;
   const nodeR = 8;
